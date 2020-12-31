@@ -1,0 +1,3 @@
+ACTION=="add", SUBSYSTEM=="platform", RUN+="/bin/chgrp input /sys/devices/platform/faustus/throttle_thermal_policy"
+ACTION=="add", SUBSYSTEM=="platform", RUN+="/bin/chmod g+w /sys/devices/platform/faustus/throttle_thermal_policy"
+
