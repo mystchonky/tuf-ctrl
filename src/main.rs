@@ -17,6 +17,9 @@ static FAN_CTL_PATH: &str = "/sys/devices/platform/faustus/throttle_thermal_poli
 fn main() {
     gtk::init().unwrap();
     let mut indicator = AppIndicator::new("libappindicator test application", "");
+    indicator.set_title("tuf-ctrl");
+    // TODO: fix icon path
+    indicator.set_icon("/home/luiq/Downloads/cooling-fan-svgrepo-com.svg");
     indicator.set_status(AppIndicatorStatus::Active);
     let mut menu = gtk::Menu::new();
 
